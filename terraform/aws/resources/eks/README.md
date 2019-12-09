@@ -57,15 +57,15 @@ EKS 클러스터 api 서버에 대한 모든 트래픽이 클러스터의 VPC �
 
 ## Node Group 생성 실패 시
 
-nat instance inbound에 eks용 프라이빗 서브넷의 cidr가 추가되어 있는지 여부를 확인한다.
+nat instance inbound에 eks용 프라이빗 서브넷의 cidr가 추가되어 있는지 여부를 확인합니다.
 
-만약 inbound에 추가되어 있지 않다면 아래와 같은 에러가 발생한다.
+만약 inbound에 추가되어 있지 않다면 아래와 같은 에러가 발생합니다.
 
 ```bash
 Error: error waiting for EKS Node Group (kyunam-eks-test-cluster:kyunam-eks-test-cluster-node-group) creation: NodeCreationFailure: Instances failed to join the kubernetes cluster.
 ```
 
-> nat 인스턴스로 트래픽이 나가야 하는데, nat 인스턴스 인바운드에 해당 private subnet 대역이 정의되어 있지 않기 때문에 에러가 발생한다.
+> nat 인스턴스로 트래픽이 나가야 하는데, nat 인스턴스 인바운드에 해당 private subnet 대역이 정의되어 있지 않기 때문에 에러 발생
 
 ## Inputs
 
@@ -140,6 +140,6 @@ $ terraform apply -var-file=eks.tfvars
 
 ## Reference
 
-EKS 생성과 관련해서 hashicorp의 eks-intro 문서를 참고했습니다.
+EKS 생성과 관련해 hashicorp의 eks-intro 문서를 참고했습니다.
 
 [Hashicorp eks intro](https://learn.hashicorp.com/terraform/aws/eks-intro)
