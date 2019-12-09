@@ -1,0 +1,8 @@
+.envrc
+.terraform
+*.tfstate
+.idea
+*.tfstate.backup
+*.tfstate.lock.*
+.vagrant
+temp.tfvars
