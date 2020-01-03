@@ -2,9 +2,9 @@
 
 Public cloud resource 기반 infrastructure를 코드로 관리하는 저장소입니다.
 
-## Create VPC
+## Create AWS VPC
 
-[VPC](/terraform/aws/resources/vpc)
+[AWS VPC](/terraform/aws/resources/vpc)
 
 Edit vpc.tfvars
 ```bash
@@ -16,9 +16,9 @@ $ cd /terraform/aws/resources/vpc
 $ terraform apply -var-file=vpc.tfvars
 ```
 
-## Create EKS Cluster
+## Create AWS EKS Cluster
 
-[EKS Cluster](/terraform/aws/resources/eks)
+[AWS EKS Cluster](/terraform/aws/resources/eks)
 
 Edit eks.tfvars
 ```bash
