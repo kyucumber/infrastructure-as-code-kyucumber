@@ -2,11 +2,33 @@
 
 Public cloud resource 기반 infrastructure를 코드로 관리하는 저장소입니다.
 
-## 지원하는 AWS 리소스
+## Create AWS VPC
 
-[Vpc](/terraform/aws/resources/vpc)
+[AWS VPC](/terraform/aws/resources/vpc)
 
-[Eks cluster](/terraform/aws/resources/eks)
+Edit vpc.tfvars
+```bash
+$ vim /terraform/aws/resources/vpc/vpc.tfvars
+```
+
+```bash
+$ cd /terraform/aws/resources/vpc
+$ terraform apply -var-file=vpc.tfvars
+```
+
+## Create AWS EKS Cluster
+
+[AWS EKS Cluster](/terraform/aws/resources/eks)
+
+Edit eks.tfvars
+```bash
+$ vim /terraform/aws/resources/eks/eks.tfvars
+```
+
+```bash
+$ cd /terraform/aws/resources/eks
+$ terraform apply -var-file=eks.tfvars
+```
 
 ## Reference
 
